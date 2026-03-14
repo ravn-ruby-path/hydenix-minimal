@@ -1,3 +1,10 @@
+# 1.0.0 (2026-03-14)
+
+
+### Features
+
+* Add commands for cloning the hydenix repository and performing an initial NixOS installation. ([bc8040c](https://github.com/ravn-ruby-path/hydenix/commit/bc8040c7c7a5222b61b6b004c19c9201d258d4ad))
+
 ## [6.0.2](https://github.com/richen604/hydenix/compare/v6.0.1...v6.0.2) (2026-01-23)
 
 
