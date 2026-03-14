@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/ravn-ruby-path/hydenix/compare/v1.4.0...v1.5.0) (2026-03-14)
+
+
+### Features
+
+* **editors:** add zed-editor as optional high-performance editor ([e3ade4c](https://github.com/ravn-ruby-path/hydenix/commit/e3ade4c4e6593559971b7073aa88626f8b76457f)), closes [hi#performance](https://github.com/hi/issues/performance)
+
 # [1.4.0](https://github.com/ravn-ruby-path/hydenix/compare/v1.3.0...v1.4.0) (2026-03-14)
 
 
