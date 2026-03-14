@@ -22,6 +22,9 @@
       url = "github:HyDE-Project/HyDE/be97b8b4db232bfffc9b74fd27ba90a3457b9354";
       flake = false;
     };
+    llm-agents = {
+      url = "github:numtide/llm-agents.nix";
+    };
     # HyDE related binaries
     hyq = {
       url = "github:richen604/hyprquery";

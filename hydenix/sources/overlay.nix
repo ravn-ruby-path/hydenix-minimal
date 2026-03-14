@@ -31,6 +31,9 @@ let
     # Expose unstable nixpkgs — use as pkgs.unstable.<package-name>
     # Example: pkgs.unstable.antigravity-fhs
     unstable = unstablePkgs;
+
+    # Expose llm-agents packages directly via pkgs.llm-agents
+    llm-agents = inputs.llm-agents.packages.${prev.stdenv.hostPlatform.system};
   };
 in
 packages

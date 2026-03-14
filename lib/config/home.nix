@@ -6,6 +6,9 @@
 
     editors.antigravity = true;
     editors.cursor = true;
+    editors.claudeCode = true;
+    editors.geminiCli = true;
+    editors.openCode = true;
 
     theme = {
       enable = true;

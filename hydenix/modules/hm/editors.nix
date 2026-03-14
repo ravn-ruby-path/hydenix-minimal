@@ -54,6 +54,24 @@ in
       description = "Enable Cursor AI editor";
     };
 
+    claudeCode = lib.mkOption {
+      type = lib.types.bool;
+      default = false;
+      description = "Enable claude-code agent";
+    };
+
+    geminiCli = lib.mkOption {
+      type = lib.types.bool;
+      default = false;
+      description = "Enable gemini-cli agent";
+    };
+
+    openCode = lib.mkOption {
+      type = lib.types.bool;
+      default = false;
+      description = "Enable opencode agent";
+    };
+
     default = lib.mkOption {
       type = lib.types.str;
       default = "code";
@@ -67,6 +85,9 @@ in
       (lib.mkIf cfg.neovim neovim) # terminal text editor
       (lib.mkIf cfg.antigravity pkgs.unstable.antigravity-fhs) # AI coding assistant
       (lib.mkIf cfg.cursor pkgs.unstable.code-cursor-fhs) # AI coding assistant
+      (lib.mkIf cfg.claudeCode llm-agents.claude-code) # AI coding assistant
+      (lib.mkIf cfg.geminiCli llm-agents.gemini-cli) # AI coding assistant
+      (lib.mkIf cfg.openCode llm-agents.opencode) # AI coding assistant
     ];
 
     programs.vscode = lib.mkIf cfg.vscode.enable {

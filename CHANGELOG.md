@@ -12,7 +12,8 @@
 ### Features
 
 * **editors:** add `antigravity-fhs` as optional editor via `hydenix.hm.editors.antigravity` option (default: false)
-* **editors:** add `code-cursor-fhs` (unstable) as optional editor via `hydenix.hm.editors.cursor` option (default: false)
+* **editors:** add `claudeCode`, `geminiCli`, and `openCode` as optional editors via `hydenix.hm.editors.*` options (default: false)
+* **flake:** add `llm-agents.nix` input and expose packages via `pkgs.llm-agents` in overlay
 
 ### Refactor
 
