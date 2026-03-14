@@ -60,6 +60,12 @@ in
       description = "Enable claude-code agent";
     };
 
+    zed = lib.mkOption {
+      type = lib.types.bool;
+      default = false;
+      description = "Enable Zed high-performance editor";
+    };
+
     geminiCli = lib.mkOption {
       type = lib.types.bool;
       default = false;
@@ -102,6 +108,7 @@ in
       (lib.mkIf cfg.openCode llm-agents.opencode) # AI coding assistant
       (lib.mkIf cfg.workmux llm-agents.workmux) # Workflow tool
       (lib.mkIf cfg.openSpec llm-agents.openspec) # Workflow tool
+      (lib.mkIf cfg.zed pkgs.unstable.zed-editor) # Fast editor
     ];
 
     programs.vscode = lib.mkIf cfg.vscode.enable {

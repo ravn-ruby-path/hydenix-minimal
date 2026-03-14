@@ -11,6 +11,7 @@
     editors.openCode = true;
     editors.workmux = true;
     editors.openSpec = true;
+    editors.zed = true;
 
     theme = {
       enable = true;
