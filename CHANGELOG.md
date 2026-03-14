@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/ravn-ruby-path/hydenix/compare/v1.0.0...v1.1.0) (2026-03-14)
+
+
+### Features
+
+* Update filesystem UUIDs and clean up theme options in configuration ([82dc259](https://github.com/ravn-ruby-path/hydenix/commit/82dc259f5db74baaed49bac2a4fc723fd8b06877))
+
 # 1.0.0 (2026-03-14)
 
 
