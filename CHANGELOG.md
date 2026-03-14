@@ -20,6 +20,7 @@
 
 * **editors:** add `antigravity-fhs` as optional editor via `hydenix.hm.editors.antigravity` option (default: false)
 * **editors:** add `claudeCode`, `geminiCli`, and `openCode` as optional editors via `hydenix.hm.editors.*` options (default: false)
+* **editors:** add `workmux` and `openSpec` as optional workflow tools via `hydenix.hm.editors.*` options (default: false)
 * **flake:** add `llm-agents.nix` input and expose packages via `pkgs.llm-agents` in overlay
 
 ### Refactor

@@ -9,6 +9,8 @@
     editors.claudeCode = true;
     editors.geminiCli = true;
     editors.openCode = true;
+    editors.workmux = true;
+    editors.openSpec = true;
 
     theme = {
       enable = true;

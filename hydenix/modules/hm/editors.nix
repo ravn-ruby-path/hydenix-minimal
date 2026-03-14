@@ -72,6 +72,18 @@ in
       description = "Enable opencode agent";
     };
 
+    workmux = lib.mkOption {
+      type = lib.types.bool;
+      default = false;
+      description = "Enable workmux (Git worktrees + tmux windows)";
+    };
+
+    openSpec = lib.mkOption {
+      type = lib.types.bool;
+      default = false;
+      description = "Enable openspec (Spec-driven development)";
+    };
+
     default = lib.mkOption {
       type = lib.types.str;
       default = "code";
@@ -88,6 +100,8 @@ in
       (lib.mkIf cfg.claudeCode llm-agents.claude-code) # AI coding assistant
       (lib.mkIf cfg.geminiCli llm-agents.gemini-cli) # AI coding assistant
       (lib.mkIf cfg.openCode llm-agents.opencode) # AI coding assistant
+      (lib.mkIf cfg.workmux llm-agents.workmux) # Workflow tool
+      (lib.mkIf cfg.openSpec llm-agents.openspec) # Workflow tool
     ];
 
     programs.vscode = lib.mkIf cfg.vscode.enable {
