@@ -5,6 +5,7 @@
     enable = true;
 
     editors.antigravity = true;
+    editors.cursor = true;
 
     theme = {
       enable = true;

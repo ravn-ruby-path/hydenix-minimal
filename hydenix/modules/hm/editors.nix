@@ -48,6 +48,12 @@ in
       description = "Enable Antigravity FHS editor";
     };
 
+    cursor = lib.mkOption {
+      type = lib.types.bool;
+      default = false;
+      description = "Enable Cursor AI editor";
+    };
+
     default = lib.mkOption {
       type = lib.types.str;
       default = "code";
@@ -60,6 +66,7 @@ in
       (lib.mkIf cfg.vim vim) # terminal text editor
       (lib.mkIf cfg.neovim neovim) # terminal text editor
       (lib.mkIf cfg.antigravity pkgs.unstable.antigravity-fhs) # AI coding assistant
+      (lib.mkIf cfg.cursor pkgs.unstable.code-cursor-fhs) # AI coding assistant
     ];
 
     programs.vscode = lib.mkIf cfg.vscode.enable {

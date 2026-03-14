@@ -4,6 +4,7 @@
 ### Features
 
 * **editors:** add `antigravity-fhs` as optional editor via `hydenix.hm.editors.antigravity` option (default: false)
+* **editors:** add `code-cursor-fhs` (unstable) as optional editor via `hydenix.hm.editors.cursor` option (default: false)
 
 ### Refactor
 
