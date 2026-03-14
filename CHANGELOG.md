@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/ravn-ruby-path/hydenix/compare/v1.3.0...v1.4.0) (2026-03-14)
+
+
+### Features
+
+* **editors:** add workmux and openspec workflow tools ([9bae748](https://github.com/ravn-ruby-path/hydenix/commit/9bae748a482752c2b61306af857367b4a80bea6f))
+
 # [1.3.0](https://github.com/ravn-ruby-path/hydenix/compare/v1.2.0...v1.3.0) (2026-03-14)
 
 
