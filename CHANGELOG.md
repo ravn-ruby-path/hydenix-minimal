@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/ravn-ruby-path/hydenix/compare/v1.2.0...v1.3.0) (2026-03-14)
+
+
+### Features
+
+* **editors:** integrate llm-agents.nix for AI coding agents ([cd79cba](https://github.com/ravn-ruby-path/hydenix/commit/cd79cbafc2dc9f8aba911821157b6f23518c7b74))
+
 # [1.2.0](https://github.com/ravn-ruby-path/hydenix/compare/v1.1.1...v1.2.0) (2026-03-14)
 
 
