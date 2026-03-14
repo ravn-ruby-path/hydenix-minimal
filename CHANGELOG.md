@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/ravn-ruby-path/hydenix/compare/v1.1.1...v1.2.0) (2026-03-14)
+
+
+### Features
+
+* **editors:** add antigravity-fhs and code-cursor-fhs as optional editor module options ([b647f42](https://github.com/ravn-ruby-path/hydenix/commit/b647f42eb31f6aabbfc5d98f7a1d92bd7cab5b21))
+* **editors:** add antigravity-fhs as optional editor module option ([7e7fd78](https://github.com/ravn-ruby-path/hydenix/commit/7e7fd7861ec0e1930cbfd2bd4a36e15d3f81832a))
+
 ## [Unreleased] (2026-03-14)
 
 
