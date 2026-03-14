@@ -49,9 +49,6 @@
     shell = pkgs.zsh;
   };
 
-  environment.systemPackages = [
-    pkgs.unstable.antigravity-fhs
-  ];
 
   system.stateVersion = "25.05";
 }

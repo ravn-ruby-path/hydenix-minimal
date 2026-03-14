@@ -42,6 +42,12 @@ in
       description = "Enable vim";
     };
 
+    antigravity = lib.mkOption {
+      type = lib.types.bool;
+      default = false;
+      description = "Enable Antigravity FHS editor";
+    };
+
     default = lib.mkOption {
       type = lib.types.str;
       default = "code";
@@ -53,6 +59,7 @@ in
     home.packages = with pkgs; [
       (lib.mkIf cfg.vim vim) # terminal text editor
       (lib.mkIf cfg.neovim neovim) # terminal text editor
+      (lib.mkIf cfg.antigravity pkgs.unstable.antigravity-fhs) # AI coding assistant
     ];
 
     programs.vscode = lib.mkIf cfg.vscode.enable {

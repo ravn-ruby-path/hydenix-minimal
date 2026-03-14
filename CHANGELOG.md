@@ -1,3 +1,21 @@
+## [Unreleased] (2026-03-14)
+
+
+### Features
+
+* **editors:** add `antigravity-fhs` as optional editor via `hydenix.hm.editors.antigravity` option (default: false)
+
+### Refactor
+
+* move `antigravity-fhs` from `environment.systemPackages` to `home.packages` via `editors` module
+* remove standalone `packages.nix` in favour of editors module integration
+
+### Docs
+
+* add comprehensive architecture guide in Spanish (`docs/arquitectura.md`)
+
+---
+
 ## [1.1.1](https://github.com/ravn-ruby-path/hydenix/compare/v1.1.0...v1.1.1) (2026-03-14)
 
 
