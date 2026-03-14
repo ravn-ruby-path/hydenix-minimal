@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/ravn-ruby-path/hydenix/compare/v1.1.0...v1.1.1) (2026-03-14)
+
+
+### Bug Fixes
+
+* correct flake path in rebuild script and add antigravity-fhs to system packages ([199f7ca](https://github.com/ravn-ruby-path/hydenix/commit/199f7cac2b9bc00668353d8b7f5e1c050bd20631))
+
 # [1.1.0](https://github.com/ravn-ruby-path/hydenix/compare/v1.0.0...v1.1.0) (2026-03-14)
 
 
