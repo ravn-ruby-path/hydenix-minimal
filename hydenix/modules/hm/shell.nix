@@ -129,6 +129,12 @@ in
         ".4" = "cd ../../../..";
         ".5" = "cd ../../../../..";
         mkdir = "mkdir -p";
+        # Rebuild aliases for development workflow
+        # Use these when running from VS Code or confined environments
+        "rebuild-check" = "nix flake check";
+        "rebuild-build" = "nix build \".#nixosConfigurations.$(hostname).config.system.build.toplevel\"";
+        "rebuild-switch" = "sudo nixos-rebuild switch --flake \"~/.config/hydenix#$(hostname)\"";
+        "rebuild-safe" = "if [[ $TERM == screen* ]]; then nix flake check; else sudo nixos-rebuild switch --flake \"~/.config/hydenix#$(hostname)\"; fi";
       };
 
       # Using the new initContent API with proper ordering

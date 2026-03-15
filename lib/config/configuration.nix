@@ -49,6 +49,11 @@
     shell = pkgs.zsh;
   };
 
+  # Security configuration for development workflow
+  # Allow user namespaces to prevent "no new privileges" errors when using sudo
+  # in confined environments (VS Code, containers, etc.)
+  security.allowUserNamespaces = true;
+  nix.settings.auto-allocate-uids = true;
 
   system.stateVersion = "25.05";
 }
