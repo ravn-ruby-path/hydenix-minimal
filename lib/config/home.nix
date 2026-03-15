@@ -18,6 +18,8 @@
     editors.workmux = true;         # Workmux terminal multiplexer
     editors.openSpec = true;        # OpenSpec tool
 
+    git.githubCli = true;           # Enable GitHub CLI
+
     # ─── Theme Configuration ───────────────────────────────────────────────
     # Manage HyDE themes: select active theme and list installed themes
     

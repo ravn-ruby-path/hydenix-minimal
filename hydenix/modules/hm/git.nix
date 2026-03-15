@@ -1,4 +1,4 @@
-{ lib, config, ... }:
+{ pkgs, lib, config, ... }:
 
 let
   cfg = config.hydenix.hm.git;
@@ -21,6 +21,12 @@ in
       default = false;
       description = "Git user email";
     };
+
+    githubCli = lib.mkOption {
+      type = lib.types.bool;
+      default = false;
+      description = "Enable GitHub CLI";
+    };
   };
 
   config = lib.mkIf cfg.enable {
@@ -33,6 +39,11 @@ in
         init.defaultBranch = "main";
         pull.rebase = false;
       };
+    };
+
+    programs.gh = {
+      enable = cfg.githubCli;
+      package = pkgs.unstable.gh;
     };
   };
 }
