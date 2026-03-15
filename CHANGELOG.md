@@ -1,3 +1,16 @@
+# [1.7.0](https://github.com/ravn-ruby-path/hydenix/compare/v1.6.0...v1.7.0) (2026-03-15)
+
+
+### Bug Fixes
+
+* **shell:** update rebuild commands for improved compatibility and safety ([8d5311c](https://github.com/ravn-ruby-path/hydenix/commit/8d5311c03c6c1b21b249b93cf2cdad8f1877179c))
+
+
+### Features
+
+* **shell:** add development workflow aliases for rebuilding and switching configurations ([2d0e45c](https://github.com/ravn-ruby-path/hydenix/commit/2d0e45c23696a3d6b2826ef6daba74ef6ed6ac04))
+* **shell:** update rebuild commands for default configuration and improve development workflow ([7a406c5](https://github.com/ravn-ruby-path/hydenix/commit/7a406c5ef54765e0eccdaf5869443919a524a103))
+
 # [1.6.0](https://github.com/ravn-ruby-path/hydenix/compare/v1.5.0...v1.6.0) (2026-03-15)
 
 
