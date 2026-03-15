@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/ravn-ruby-path/hydenix/compare/v1.5.0...v1.6.0) (2026-03-15)
+
+
+### Features
+
+* **flake:** add new inputs and locked configurations for blueprint, bun2nix, flake-parts, llm-agents, and systems ([ea4eb26](https://github.com/ravn-ruby-path/hydenix/commit/ea4eb265d94bf8d5b4aa7e0b0ec1afc40cf95a16))
+
 # [1.5.0](https://github.com/ravn-ruby-path/hydenix/compare/v1.4.0...v1.5.0) (2026-03-14)
 
 
