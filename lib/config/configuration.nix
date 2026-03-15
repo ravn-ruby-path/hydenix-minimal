@@ -53,6 +53,9 @@
   # Allow user namespaces to prevent "no new privileges" errors when using sudo
   # in confined environments (VS Code, containers, etc.)
   security.allowUserNamespaces = true;
+  
+  # Enable experimental feature for auto-allocate-uids
+  nix.settings.experimental-features = [ "auto-allocate-uids" ];
   nix.settings.auto-allocate-uids = true;
 
   system.stateVersion = "25.05";

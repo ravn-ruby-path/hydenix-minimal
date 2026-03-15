@@ -132,8 +132,8 @@ in
         # Rebuild aliases for development workflow
         # Use these when running from VS Code or confined environments
         "rebuild-check" = "nix flake check";
-        "rebuild-build" = "nix build \".#nixosConfigurations.$(hostname).config.system.build.toplevel\"";
-        "rebuild-switch" = "sudo nixos-rebuild switch --flake \"$PWD#$(hostname)\"";
+        "rebuild-build" = "nix build \".#nixosConfigurations.default.config.system.build.toplevel\"";
+        "rebuild-switch" = "sudo nixos-rebuild switch --flake \"$PWD#default\"";
         "rebuild-safe" = "safe-rebuild switch";
       };
 
