@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.7.0...v1.8.0) (2026-03-15)
+
+
+### Features
+
+* Add an option to enable and configure GitHub CLI. ([3988c5b](https://github.com/ravn-ruby-path/hydenix-minimal/commit/3988c5b0def86da737c61987f1a25962818e8ab6))
+
 # [1.7.0](https://github.com/ravn-ruby-path/hydenix/compare/v1.6.0...v1.7.0) (2026-03-15)
 
 
