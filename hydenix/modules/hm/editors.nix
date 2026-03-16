@@ -90,9 +90,15 @@ in
       description = "Enable openspec (Spec-driven development)";
     };
 
+    khanelivim = lib.mkOption {
+      type = lib.types.bool;
+      default = true;
+      description = "Enable Khanelivim (Nix-powered Neovim configuration)";
+    };
+
     default = lib.mkOption {
       type = lib.types.str;
-      default = "code";
+      default = "nvim";
       description = "Default text editor";
     };
   };
@@ -109,6 +115,7 @@ in
       (lib.mkIf cfg.workmux llm-agents.workmux) # Workflow tool
       (lib.mkIf cfg.openSpec llm-agents.openspec) # Workflow tool
       (lib.mkIf cfg.zed pkgs.unstable.zed-editor) # Fast editor
+      (lib.mkIf cfg.khanelivim inputs.khanelivim.packages.${pkgs.system}.default) # Khanelivim Neovim configuration
     ];
 
     programs.vscode = lib.mkIf cfg.vscode.enable {
