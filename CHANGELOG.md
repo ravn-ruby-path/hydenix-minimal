@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.8.0...v1.9.0) (2026-03-16)
+
+
+### Features
+
+* Introduce home-manager tools module and add tmux option. ([917e740](https://github.com/ravn-ruby-path/hydenix-minimal/commit/917e7409c8491d02a63dbc393173fb6f2dbfaf95))
+
 # [1.8.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.7.0...v1.8.0) (2026-03-15)
 
 
