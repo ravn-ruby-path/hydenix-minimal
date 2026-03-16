@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.14.0...v1.15.0) (2026-03-16)
+
+
+### Features
+
+* integrate khanelivim distro from GitHub via flake input ([b1e9e48](https://github.com/ravn-ruby-path/hydenix-minimal/commit/b1e9e4805f618a5d7a8f0e0b380e3085db78dd1a))
+
 # [1.14.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.13.0...v1.14.0) (2026-03-16)
 
 
