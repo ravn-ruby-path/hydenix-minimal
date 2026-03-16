@@ -25,10 +25,6 @@
     llm-agents = {
       url = "github:numtide/llm-agents.nix";
     };
-    khanelivim = {
-      url = "path:./khanelivim";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
-    };
     # HyDE related binaries
     hyq = {
       url = "github:richen604/hyprquery";

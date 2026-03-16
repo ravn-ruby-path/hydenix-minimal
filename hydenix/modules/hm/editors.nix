@@ -7,6 +7,8 @@
 
 let
   cfg = config.hydenix.hm.editors;
+  # Import khanelivim flake directly
+  khanelivimFlake = builtins.getFlake "git+file:///home/hydenix/hydenix-minimal/khanelivim";
 in
 {
   options.hydenix.hm.editors = {
@@ -115,7 +117,7 @@ in
       (lib.mkIf cfg.workmux llm-agents.workmux) # Workflow tool
       (lib.mkIf cfg.openSpec llm-agents.openspec) # Workflow tool
       (lib.mkIf cfg.zed pkgs.unstable.zed-editor) # Fast editor
-      (lib.mkIf cfg.khanelivim inputs.khanelivim.packages.${pkgs.system}.default) # Khanelivim Neovim configuration
+      (lib.mkIf cfg.khanelivim khanelivimFlake.packages.${pkgs.system}.default) # Khanelivim Neovim configuration
     ];
 
     programs.vscode = lib.mkIf cfg.vscode.enable {
