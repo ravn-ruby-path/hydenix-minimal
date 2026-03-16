@@ -28,7 +28,6 @@
     khanelivim = {
       url = "path:./khanelivim";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
-      inputs.flake-parts.follows = "flake-parts";
     };
     # HyDE related binaries
     hyq = {
