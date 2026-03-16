@@ -1,3 +1,11 @@
+# [1.13.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.12.0...v1.13.0) (2026-03-16)
+
+
+### Features
+
+* Add default configuration for workmux with post_create setup and tmux pane configuration ([63ac35d](https://github.com/ravn-ruby-path/hydenix-minimal/commit/63ac35d24ec2f155ee664ddc29fcfa751a6bf0b9))
+* Add Khanelivim configuration for Neovim in editors and flake inputs ([1422033](https://github.com/ravn-ruby-path/hydenix-minimal/commit/1422033e1e11cdf65de8c5db3d8772bd13667075))
+
 # [1.12.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.11.0...v1.12.0) (2026-03-16)
 
 
