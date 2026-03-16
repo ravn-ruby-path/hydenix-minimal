@@ -1,0 +1,18 @@
+# Default configuration for workmux
+
+# You can add aliases or dependencies to be set up when the worktree is created.
+post_create:
+  - direnv allow
+
+files:
+  symlink:
+    - .env
+    - result
+
+# Tmux pane configuration.
+panes:
+  - command: $SHELL
+    focus: true
+  - command: git status
+    split: horizontal
+    size: 20
