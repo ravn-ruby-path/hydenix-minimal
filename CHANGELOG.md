@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.11.0...v1.12.0) (2026-03-16)
+
+
+### Features
+
+* Configure programs.git, remove neovim from home packages, and update the bash `ll` alias. ([1e115ae](https://github.com/ravn-ruby-path/hydenix-minimal/commit/1e115ae75c06ade15f04abc73ccc0dff38457ccc))
+
 # [1.11.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.10.0...v1.11.0) (2026-03-16)
 
 
