@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.10.0...v1.11.0) (2026-03-16)
+
+
+### Features
+
+* enable gnome keyring ([4622e78](https://github.com/ravn-ruby-path/hydenix-minimal/commit/4622e7813698cc9f7a746cd86ad136f99b8c6767))
+
 # [1.10.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.9.0...v1.10.0) (2026-03-16)
 
 
