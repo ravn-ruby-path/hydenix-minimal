@@ -44,5 +44,10 @@
         "Decay Green"
       ];
     };
+
+    hyprland.animations = {
+      enable = true;
+      preset = "diablo-2";
+    };
   };
 }
