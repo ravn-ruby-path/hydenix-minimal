@@ -7,6 +7,7 @@
     ./mutable.nix
     ./comma.nix
     ./dolphin.nix
+    ./dropbox.nix
     ./editors.nix
     ./fastfetch.nix
     ./firefox.nix

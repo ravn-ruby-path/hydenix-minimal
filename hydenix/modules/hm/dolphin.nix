@@ -15,6 +15,12 @@ in
       default = config.hydenix.hm.enable;
       description = "Enable dolphin module";
     };
+
+    plugins = lib.mkOption {
+      type = lib.types.bool;
+      default = true;
+      description = "Enable Dolphin plugins";
+    };
   };
 
   config = lib.mkIf cfg.enable {
@@ -30,6 +36,8 @@ in
       kio # KDE I/O framework
       kio-extras # Additional KDE I/O protocols
       kwayland # KDE Wayland integration
+    ] ++ lib.optionals cfg.plugins [
+      pkgs.unstable.kdePackages.dolphin-plugins
     ];
 
     xdg.mimeApps = {

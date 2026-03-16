@@ -20,6 +20,9 @@
 
     git.githubCli = true;           # Enable GitHub CLI
     tools.tmux = true;              # Enable tmux terminal multiplexer
+    
+    dropbox.enable = true;          # Enable Dropbox and appindicator
+    dolphin.enable = true;          # Enable KDE Dolphin and plugins
 
     # Enable remote control for kitty (required by workmux)
     terminals.kitty.configText = ''
