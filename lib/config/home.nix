@@ -7,7 +7,6 @@
     # ─── Text Editors & IDEs ───────────────────────────────────────────────
     # Configure which code editors and development tools to install
     
-    editors.khanelivim = true;      # Khanelivim Nix-powered Neovim configuration
     editors.antigravity = true;     # Google Antigravity IDE (from nixpkgs-unstable)
     editors.cursor = true;          # Cursor AI-powered code editor
     editors.zed = true;             # Zed high-performance code editor
