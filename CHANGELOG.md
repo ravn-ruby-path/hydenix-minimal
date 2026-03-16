@@ -1,3 +1,16 @@
+# [1.14.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.13.0...v1.14.0) (2026-03-16)
+
+
+### Bug Fixes
+
+* Remove unnecessary flake-parts input from khanelivim configuration ([e72a33a](https://github.com/ravn-ruby-path/hydenix-minimal/commit/e72a33a4c8106f88a93e3b4befd390dcf018da52))
+* rollback khanelivim integration - khanelivim directory was removed ([82d2958](https://github.com/ravn-ruby-path/hydenix-minimal/commit/82d2958f96da732f241358000e810692d6e457b3))
+
+
+### Features
+
+* Update khanelivim integration and configuration in flake files ([681a9bf](https://github.com/ravn-ruby-path/hydenix-minimal/commit/681a9bf6cdb6f15cf0f688304baa03ce06313f22))
+
 # [1.13.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.12.0...v1.13.0) (2026-03-16)
 
 
