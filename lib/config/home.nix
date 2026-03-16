@@ -21,6 +21,12 @@
     git.githubCli = true;           # Enable GitHub CLI
     tools.tmux = true;              # Enable tmux terminal multiplexer
 
+    # Enable remote control for kitty (required by workmux)
+    terminals.kitty.configText = ''
+      allow_remote_control yes
+      listen_on unix:@mykitty
+    '';
+
     # ─── Theme Configuration ───────────────────────────────────────────────
     # Manage HyDE themes: select active theme and list installed themes
     
