@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.15.0...v1.16.0) (2026-03-16)
+
+
+### Features
+
+* update neovim configuration and adjust package inclusion logic ([e2000bf](https://github.com/ravn-ruby-path/hydenix-minimal/commit/e2000bfb9095b4fbe7e5b9b1b08ecf35c812b3c0))
+
 # [1.15.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.14.0...v1.15.0) (2026-03-16)
 
 
