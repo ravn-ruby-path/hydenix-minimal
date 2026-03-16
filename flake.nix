@@ -41,6 +41,10 @@
       url = "github:richen604/hyde-config";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    khanelivim = {
+      url = "github:khaneliman/khanelivim";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
   };
   outputs =
     { ... }@inputs:

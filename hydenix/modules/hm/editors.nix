@@ -2,6 +2,7 @@
   config,
   lib,
   pkgs,
+  inputs,
   ...
 }:
 
@@ -93,7 +94,7 @@ in
     khanelivim = lib.mkOption {
       type = lib.types.bool;
       default = false;
-      description = "Enable Khanelivim (Nix-powered Neovim configuration) - requires khanelivim directory to exist";
+      description = "Enable Khanelivim (Khaneliman's Nix-powered Neovim configuration)";
     };
 
     default = lib.mkOption {
@@ -115,6 +116,8 @@ in
       (lib.mkIf cfg.workmux llm-agents.workmux) # Workflow tool
       (lib.mkIf cfg.openSpec llm-agents.openspec) # Workflow tool
       (lib.mkIf cfg.zed pkgs.unstable.zed-editor) # Fast editor
+    ] ++ [
+      (lib.mkIf cfg.khanelivim inputs.khanelivim.packages.${pkgs.system}.default) # Neovim distro
     ];
 
     programs.vscode = lib.mkIf cfg.vscode.enable {

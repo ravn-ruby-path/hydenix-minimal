@@ -10,6 +10,7 @@
     editors.antigravity = true;     # Google Antigravity IDE (from nixpkgs-unstable)
     editors.cursor = true;          # Cursor AI-powered code editor
     editors.zed = true;             # Zed high-performance code editor
+    editors.khanelivim = true;      # Khanelivim: Khaneliman's Neovim distro
     
     editors.claudeCode = true;      # Claude AI integration for VS Code
     editors.geminiCli = true;       # Google Gemini CLI tool
