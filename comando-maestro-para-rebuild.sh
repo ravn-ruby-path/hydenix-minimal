@@ -12,3 +12,6 @@ sudo nixos-rebuild switch --flake /home/hydenix/hydenix#default
 # Para actualizar el sistema y el home-manager
 sudo nixos-rebuild switch --flake .#default
 home-manager switch --flake .#default
+
+
+nix flake update --commit-lock-file   

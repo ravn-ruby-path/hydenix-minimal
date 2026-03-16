@@ -33,8 +33,8 @@ in
 
     neovim = lib.mkOption {
       type = lib.types.bool;
-      default = true;
-      description = "Enable neovim";
+      default = false;
+      description = "Enable neovim (disabled when using khanelivim)";
     };
 
     vim = lib.mkOption {
@@ -107,7 +107,7 @@ in
   config = lib.mkIf cfg.enable {
     home.packages = with pkgs; [
       (lib.mkIf cfg.vim vim) # terminal text editor
-      (lib.mkIf cfg.neovim neovim) # terminal text editor
+      (lib.mkIf (cfg.neovim && !cfg.khanelivim) neovim) # terminal text editor (disabled if khanelivim is used)
       (lib.mkIf cfg.antigravity pkgs.unstable.antigravity-fhs) # AI coding assistant
       (lib.mkIf cfg.cursor pkgs.unstable.code-cursor-fhs) # AI coding assistant
       (lib.mkIf cfg.claudeCode llm-agents.claude-code) # AI coding assistant
@@ -116,7 +116,6 @@ in
       (lib.mkIf cfg.workmux llm-agents.workmux) # Workflow tool
       (lib.mkIf cfg.openSpec llm-agents.openspec) # Workflow tool
       (lib.mkIf cfg.zed pkgs.unstable.zed-editor) # Fast editor
-    ] ++ [
       (lib.mkIf cfg.khanelivim inputs.khanelivim.packages.${pkgs.system}.default) # Neovim distro
     ];
 
