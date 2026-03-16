@@ -19,6 +19,7 @@
     editors.openSpec = true;        # OpenSpec tool
 
     git.githubCli = true;           # Enable GitHub CLI
+    tools.tmux = true;              # Enable tmux terminal multiplexer
 
     # ─── Theme Configuration ───────────────────────────────────────────────
     # Manage HyDE themes: select active theme and list installed themes

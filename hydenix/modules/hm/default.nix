@@ -25,6 +25,7 @@
     ./swww.nix
     ./terminals.nix
     ./theme.nix
+    ./tools.nix
     ./uwsm.nix
     ./waybar.nix
     ./wlogout.nix
