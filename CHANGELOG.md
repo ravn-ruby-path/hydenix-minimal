@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.9.0...v1.10.0) (2026-03-16)
+
+
+### Features
+
+* Add Dropbox Home Manager module and enhance Dolphin module with a plugin option. ([eb464aa](https://github.com/ravn-ruby-path/hydenix-minimal/commit/eb464aa6391af5365280cc86aa5c9b60c3eda5cf))
+
 # [1.9.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.8.0...v1.9.0) (2026-03-16)
 
 
