@@ -24,6 +24,7 @@
       name = "Roberto Flores";
       email = "25asab015@ujmd.edu.sv";
       githubCli = true;
+      gitProtocol = "ssh";
       githubUser = "ravn-ruby-path";
       editor = "nvim";
       delta.enable = true;
