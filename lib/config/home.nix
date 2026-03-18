@@ -31,7 +31,7 @@
       delta.sideBySide = true;
       lfs.enable = true;
       gpg.enable = true;
-      gpg.signingKey = "DDA77282"; 
+      gpg.signingKey = "E67C11DF"; 
     };
     
     dropbox.enable = true;          # Enable Dropbox and appindicator
