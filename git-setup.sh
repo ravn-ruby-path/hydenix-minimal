@@ -293,7 +293,7 @@ verify_ssh() {
     # 5. Check if key is on GitHub
     if command_exists gh && gh auth status >/dev/null 2>&1; then
         local key_fingerprint
-        key_fingerprint=$(ssh-keygen -lf "${key_path}.pub" 2>/dev/null | awk '{print $2}' || echo "")
+        key_fingerprint=$(awk '{print $2}' "${key_path}.pub" 2>/dev/null || echo "")
         local gh_keys
         gh_keys=$(gh ssh-key list 2>/dev/null || echo "")
         
