@@ -503,12 +503,32 @@ setup_github_auth() {
         return 1
     fi
     
+    # Workaround for NixOS Home Manager read-only config.yml
+    local temp_gh_config=$(mktemp -d)
+    if [ -d "$HOME/.config/gh" ]; then
+        cp -Lr "$HOME/.config/gh"/* "$temp_gh_config/" 2>/dev/null || true
+    fi
+    chmod -R u+w "$temp_gh_config"
+    export GH_CONFIG_DIR="$temp_gh_config"
+
     if echo "$GITHUB_TOKEN" | gh auth login --with-token --hostname github.com; then
+        if [ -f "$temp_gh_config/hosts.yml" ]; then
+            mkdir -p "$HOME/.config/gh"
+            # Remove existing symlink if any (though usually only config.yml is)
+            [ -L "$HOME/.config/gh/hosts.yml" ] && rm -f "$HOME/.config/gh/hosts.yml"
+            cp -f "$temp_gh_config/hosts.yml" "$HOME/.config/gh/hosts.yml" 2>/dev/null || true
+            chmod 600 "$HOME/.config/gh/hosts.yml" 2>/dev/null || true
+        fi
         print_success "Authentication successful"
     else
         print_error "Authentication failed"
+        rm -rf "$temp_gh_config"
+        unset GH_CONFIG_DIR
         return 1
     fi
+    
+    rm -rf "$temp_gh_config"
+    unset GH_CONFIG_DIR
     
     unset GITHUB_TOKEN
 }
