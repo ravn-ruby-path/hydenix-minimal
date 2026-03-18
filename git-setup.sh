@@ -19,7 +19,7 @@ set -euo pipefail
 # └──────────────────────────────────────────────────────────────────────────────┘
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-GIT_CONFIG_FILE="$SCRIPT_DIR/modules/hm/terminal/software/git.nix"
+GIT_CONFIG_FILE="$SCRIPT_DIR/lib/config/home.nix"
 
 
 # User configuration (edit these)
