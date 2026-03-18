@@ -19,8 +19,19 @@
     editors.workmux = true;         # Workmux terminal multiplexer
     editors.openSpec = true;        # OpenSpec tool
 
-    git.githubCli = true;           # Enable GitHub CLI
-    tools.tmux = true;              # Enable tmux terminal multiplexer
+    git = {
+      enable = true;
+      name = "Roberto Flores";
+      email = "25asab015@ujmd.edu.sv";
+      githubCli = true;
+      githubUser = "ravn-ruby-path";
+      editor = "nvim";
+      delta.enable = true;
+      delta.sideBySide = true;
+      lfs.enable = true;
+      gpg.enable = true;
+      gpg.signingKey = "DDA77282"; 
+    };
     
     dropbox.enable = true;          # Enable Dropbox and appindicator
     dolphin.enable = true;          # Enable KDE Dolphin and plugins
