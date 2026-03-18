@@ -893,7 +893,7 @@ do_setup() {
         if [[ ! "$do_rebuild" =~ ^[nN]$ ]]; then
             cd "$SCRIPT_DIR"
             git add -A && git -c commit.gpgsign=false commit -m "chore: update GPG signing key" 2>/dev/null || true
-            sudo nixos-rebuild switch --flake .#hydenix
+            sudo nixos-rebuild switch --flake .#default
         fi
     fi
 }
@@ -902,7 +902,7 @@ do_rebuild() {
     print_section "${ICON_REFRESH} NixOS Rebuild"
     cd "$SCRIPT_DIR"
     git add -A && git -c commit.gpgsign=false commit -m "chore: pre-rebuild commit" 2>/dev/null || true
-    sudo nixos-rebuild switch --flake .#hydenix
+    sudo nixos-rebuild switch --flake .#default
 }
 
 do_clean() {
