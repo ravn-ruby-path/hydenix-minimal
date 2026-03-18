@@ -1,3 +1,11 @@
+# [1.17.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.16.0...v1.17.0) (2026-03-18)
+
+
+### Features
+
+* introduce comprehensive Git module configuration including GPG, Delta, and a setup script. ([1d518c7](https://github.com/ravn-ruby-path/hydenix-minimal/commit/1d518c70b9005160ffd3b3220be89a90c595c8ad))
+* Set Git protocol to SSH. ([08d4d82](https://github.com/ravn-ruby-path/hydenix-minimal/commit/08d4d8252520c389fc9bda3455073b9ad396809a))
+
 # [1.16.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.15.0...v1.16.0) (2026-03-16)
 
 
