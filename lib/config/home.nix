@@ -18,6 +18,8 @@
     
     editors.workmux = true;         # Workmux terminal multiplexer
     editors.openSpec = true;        # OpenSpec tool
+    
+    tools.tmux = true;              # Enable tmux terminal multiplexer
 
     git = {
       enable = true;
