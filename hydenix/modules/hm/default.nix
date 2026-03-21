@@ -31,6 +31,8 @@
     ./waybar.nix
     ./wlogout.nix
     ./xdg.nix
+    ./zed
+    ./helix
   ];
 
   options.hydenix.hm = {

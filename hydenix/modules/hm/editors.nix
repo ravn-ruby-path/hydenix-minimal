@@ -61,6 +61,12 @@ in
       description = "Enable claude-code agent";
     };
 
+    helix = lib.mkOption {
+      type = lib.types.bool;
+      default = false;
+      description = "Enable Helix editor";
+    };
+
     zed = lib.mkOption {
       type = lib.types.bool;
       default = false;
@@ -115,7 +121,6 @@ in
       (lib.mkIf cfg.openCode llm-agents.opencode) # AI coding assistant
       (lib.mkIf cfg.workmux llm-agents.workmux) # Workflow tool
       (lib.mkIf cfg.openSpec llm-agents.openspec) # Workflow tool
-      (lib.mkIf cfg.zed pkgs.unstable.zed-editor) # Fast editor
       (lib.mkIf cfg.khanelivim inputs.khanelivim.packages.${pkgs.system}.default) # Neovim distro
     ];
 
