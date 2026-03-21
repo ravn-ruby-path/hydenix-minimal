@@ -1,3 +1,11 @@
+# [1.19.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.18.0...v1.19.0) (2026-03-21)
+
+
+### Features
+
+* Add comprehensive NixOS flake configuration for system and home environments. ([0b4c094](https://github.com/ravn-ruby-path/hydenix-minimal/commit/0b4c094efba8837a9c4bd9e23d44f68024ed1707))
+* **editors:** integracion pura de zed y helix en Home Manager ([6356f65](https://github.com/ravn-ruby-path/hydenix-minimal/commit/6356f653664d5c03b34487c43b2680235afa92f3))
+
 # [1.18.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.17.0...v1.18.0) (2026-03-19)
 
 
