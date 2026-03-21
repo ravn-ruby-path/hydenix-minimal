@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.17.0...v1.18.0) (2026-03-19)
+
+
+### Features
+
+* Add utility scripts for automating Nix theme source updates and comparing Hyde system configurations. ([8afbd94](https://github.com/ravn-ruby-path/hydenix-minimal/commit/8afbd94ca78e45b9d90bb940c44a857f9e4f3564))
+
 # [1.17.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.16.0...v1.17.0) (2026-03-18)
 
 
