@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
 
   hydenix.hm = {
@@ -44,6 +44,11 @@
     terminals.kitty.configText = ''
       allow_remote_control yes
       listen_on unix:@mykitty
+      font_family SF Mono
+      bold_font auto
+      italic_font auto
+      bold_italic_font auto
+      font_size 11.0
     '';
 
     # ─── Theme Configuration ───────────────────────────────────────────────
@@ -64,6 +69,21 @@
     hyprland.animations = {
       enable = true;
       preset = "diablo-2";
+    };
+  };
+
+  # ─── Font Configuration ──────────────────────────────────────────────────
+  home.packages = [
+    (pkgs.callPackage ../../hydenix/pkgs/apple-fonts {})
+    pkgs.unstable.nerd-fonts.symbols-only
+  ];
+
+  fonts.fontconfig = {
+    enable = true;
+    defaultFonts = {
+      sansSerif = ["SF Pro Display"];
+      monospace = ["SF Mono" "Symbols Nerd Font"];
+      serif = ["New York Small"];
     };
   };
 }
