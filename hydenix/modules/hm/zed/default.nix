@@ -142,7 +142,7 @@ in {
 
     xdg.configFile."${configFile}" = {
       text = settingsJSON;
-      mutable = true;
+      # mutable = true;
     };
   };
 }
