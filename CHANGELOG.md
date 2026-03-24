@@ -1,3 +1,10 @@
+## [1.19.1](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.19.0...v1.19.1) (2026-03-24)
+
+
+### Bug Fixes
+
+* **hm:** use services.dropbox to resolve execution hangs ([3703bd0](https://github.com/ravn-ruby-path/hydenix-minimal/commit/3703bd04dc24e3850838f00118384fce4eed977a))
+
 # [1.19.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.18.0...v1.19.0) (2026-03-21)
 
 
