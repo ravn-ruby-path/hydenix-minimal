@@ -1,3 +1,10 @@
+## [1.20.3](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.20.2...v1.20.3) (2026-03-24)
+
+
+### Bug Fixes
+
+* **dropbox:** enhance systemd service configuration with proper timeout and QT platform settings ([5522e62](https://github.com/ravn-ruby-path/hydenix-minimal/commit/5522e622e6a116b62e735332d16cea14d998ef68))
+
 ## [1.20.2](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.20.1...v1.20.2) (2026-03-24)
 
 
