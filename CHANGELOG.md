@@ -1,3 +1,10 @@
+# [1.20.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.19.1...v1.20.0) (2026-03-24)
+
+
+### Features
+
+* Enable home-manager Dropbox service and update nixpkgs-unstable, resolving package collisions by removing `unstable.dropbox` from `home.packages`. ([5bfe728](https://github.com/ravn-ruby-path/hydenix-minimal/commit/5bfe728801512b8419c970841f03b4522cc418f5))
+
 ## [1.19.1](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.19.0...v1.19.1) (2026-03-24)
 
 
