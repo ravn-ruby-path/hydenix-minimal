@@ -1,3 +1,10 @@
+## [1.20.2](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.20.1...v1.20.2) (2026-03-24)
+
+
+### Bug Fixes
+
+* **editors:** enable seahorse and configure antigravity password-store ([95f6bad](https://github.com/ravn-ruby-path/hydenix-minimal/commit/95f6bad5d909e488b87e66df0324c41ee33b2582))
+
 ## [1.20.1](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.20.0...v1.20.1) (2026-03-24)
 
 
