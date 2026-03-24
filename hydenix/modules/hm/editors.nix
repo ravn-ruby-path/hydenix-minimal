@@ -192,6 +192,23 @@ in
       })
     ];
 
+    xdg.desktopEntries = lib.mkIf cfg.antigravity {
+      antigravity = {
+        name = "Antigravity";
+        exec = "antigravity --password-store=\"gnome-libsecret\" %U";
+        icon = "antigravity";
+        terminal = false;
+        categories = [ "Utility" "TextEditor" "Development" "IDE" ];
+        comment = "AI Coding Assistant";
+        mimeType = [ "text/plain" "inode/directory" ];
+      };
+    };
+
+    home.shellAliases = lib.mkIf cfg.antigravity {
+      antigravity = "antigravity --password-store=\"gnome-libsecret\"";
+      cursor = "cursor --password-store=\"gnome-libsecret\"";
+    };
+
     home.sessionVariables = {
       EDITOR = cfg.default;
       VISUAL = cfg.default;
