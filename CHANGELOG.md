@@ -1,3 +1,10 @@
+## [1.20.1](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.20.0...v1.20.1) (2026-03-24)
+
+
+### Bug Fixes
+
+* Override Dropbox systemd service to fix broken start script and disable HOME override. ([b090f30](https://github.com/ravn-ruby-path/hydenix-minimal/commit/b090f30b9feb62a1cd8cf51d70925c80984d683c))
+
 # [1.20.0](https://github.com/ravn-ruby-path/hydenix-minimal/compare/v1.19.1...v1.20.0) (2026-03-24)
 
 
