@@ -29,6 +29,16 @@ in
       path = "${pkgs.unstable.dropbox}/bin/dropbox";
     };
 
+    # Override the broken dropbox-start script containing "run: command not found"
+    # and disable the HOME override which forces dropbox into ~/.dropbox-hm
+    systemd.user.services.dropbox = {
+      Service = {
+        ExecStart = lib.mkForce "${pkgs.unstable.dropbox}/bin/dropbox start";
+        Environment = lib.mkForce [ "DISPLAY=" ];
+        PIDFile = lib.mkForce "%h/.dropbox/dropbox.pid";
+      };
+    };
+
     home.packages = with pkgs; [
       # removed unstable.dropbox to avoid desktop file collision
     ] ++ lib.optionals cfg.appindicator [
